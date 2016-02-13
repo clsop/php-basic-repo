@@ -1,0 +1,7 @@
+{
+    "name": "clayzzz/php-basic-data-repo"
+    "version": "0.1"
+    "require-dev": {
+	"phpunit/phpunit": "5.0.*"
+    }
+}
