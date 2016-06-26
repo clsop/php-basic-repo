@@ -1,6 +1,8 @@
 <?php
 namespace base\data\test {
-	class BatchDataRepo implements \data\repository\IBatchRepository {
+	use \PHPUnit\Framework\TestCase;
+
+	class BatchDataRepo implements \base\data\repository\IBatchRepository {
 		private $source;
 
 		public function __construct() {
@@ -25,7 +27,7 @@ namespace base\data\test {
 			return $this->source;
 		}
 
-		public function batchTransaction($objects) {
+		public function batchTransaction($objects): array {
 			$updates = [];
 
 			foreach ($objects['creates'] as $key => $value) {
@@ -50,7 +52,7 @@ namespace base\data\test {
 		}
 	}
 
-	class BatchDataRepoTest extends \PHPUnit_Framework_TestCase {
+	class BatchDataRepoTest extends TestCase {
 		protected $dataRepo;
 
 		protected function setUp() {

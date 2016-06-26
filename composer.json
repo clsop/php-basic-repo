@@ -1,6 +1,6 @@
 {
-    "name": "php-basic-repo"
-    "version": "0.1"
+    "name": "php-basic-repo",
+    "version": "0.0.1-dev",
     "description": "data repository with unit of work",
     "type": "library",
     "config": {
@@ -19,9 +19,6 @@
 	],
 	"require-dev": {
 		"phpunit/phpunit": "^5.4"
-	},
-	"require": {
-		"php-basic-patterns": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {

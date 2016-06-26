@@ -1,3 +1,5 @@
 .*~
 doc/
 *.sublime-*
+vendor/
+composer.lock

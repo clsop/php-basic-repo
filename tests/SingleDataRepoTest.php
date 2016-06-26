@@ -1,6 +1,8 @@
 <?php
 namespace base\data\test {
-	class DataRepo implements \data\repository\IDataRepository {
+	use \PHPUnit\Framework\TestCase;
+
+	class DataRepo implements \base\data\repository\IDataRepository {
 		private $source;
 
 		public function __construct() {
@@ -25,12 +27,14 @@ namespace base\data\test {
 			return $this->source;
 		}
 
-		public function create($object) {
+		public function create($object): array {
 			array_push($this->source, $object);
+			return $this->source;
 		}
 
-		public function update($object) {
+		public function update($object): array {
 			$this->source[$object] = $object;
+			return $this->source;
 		}
 
 		public function delete($object) {
@@ -42,7 +46,7 @@ namespace base\data\test {
 		}
 	}
 
-	class SingleDataRepoTest extends \PHPUnit_Framework_TestCase {
+	class SingleDataRepoTest extends TestCase {
 		protected $dataRepo;
 
 		protected function setUp() {
