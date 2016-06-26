@@ -1,0 +1,10 @@
+<phpunit bootstrap="../vendor/autoload.php" beStrictAboutTestsThatDoNotTestAnything="true">
+  <testsuites>
+    <testsuite name="single">
+	   <file>SingleDataRepoTest.php</file>
+    </testsuite>
+    <testsuite name="batch">
+	   <file>BatchDataRepoTest.php</file>
+    </testsuite>
+  </testsuites>
+</phpunit>

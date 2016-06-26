@@ -1,7 +1,5 @@
 <?php
-namespace data\repository;
-
-require_once('base_repository.inc.php');
+namespace base\data\repository;
 
 /**
  * Base implementation to a data repository
@@ -11,17 +9,17 @@ interface IDataRepository extends IBaseRepository {
 	 * Creates a new object in the repository
 	 * 
 	 * @param  mixed $objects the object(s) to create
-	 * @return mixed newly created object
+	 * @return array newly created objects
 	 */
-	public function create($objects);
+	public function create($objects): array;
 
 	/**
 	 * Updates an object in the repository
 	 * 
 	 * @param  mixed $objects the object(s) to update values from
-	 * @return mixed old object
+	 * @return array old objects
 	 */
-	public function update($objects);
+	public function update($objects): array;
 
 	/**
 	 * Deletes an object from the repository

@@ -1,9 +1,5 @@
 <?php
-namespace data\repository;
-
-require_once('batch_repository.inc.php');
-require_once('uow_object.inc.php');
-require_once('exception/uow_exception.inc.php');
+namespace base\data\repository;
 
 /**
  * Base for implementing Unit of work (referred as UOW)

@@ -1,5 +1,5 @@
 <?php
-namespace data\repository;
+namespace base\data\repository;
 
 /**
  * Represent an object used by uow for traching changes

@@ -1,7 +1,5 @@
 <?php
-namespace clayzzz\data\test {
-	require_once('src/data_repository.inc.php');
-
+namespace base\data\test {
 	class DataRepo implements \data\repository\IDataRepository {
 		private $source;
 

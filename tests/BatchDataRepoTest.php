@@ -1,7 +1,5 @@
 <?php
-namespace clayzzz\data\test {
-	require_once('src/batch_repository.inc.php');
-
+namespace base\data\test {
 	class BatchDataRepo implements \data\repository\IBatchRepository {
 		private $source;
 
